@@ -20,7 +20,7 @@
             <a href="#">Over Ons</a>
             <a href="#">Contact</a>
         </nav>
-        <a href="#"><img src="img/account.png" alt="login"></a>
+        <a href="pages/conn.php"><img src="img/account.png" alt="login"></a>
     </header>`
 
     <main>
