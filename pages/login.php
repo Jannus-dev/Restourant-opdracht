@@ -9,9 +9,17 @@
 <body>
     
 
-    <?php
-        require 'pages/comm.php'
-    ?>
+<form name="loginform" action="inlog.php" method="post">
+
+    <label for="user">User name:</label><br>
+    <input type="text" id="user" name="user"><br>
+
+    <label for="password">password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    
+    <br>
+    <input type="submit" value="Submit">
+    </form>
 
 
 </body>

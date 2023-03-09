@@ -6,6 +6,16 @@
 
 header
 {
+    background-image: url("../img/achtergrond1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: saturation(25%);
+    height: 700px;
+}
+
+header div
+{
+    vertical-align: baseline;
     display: flex;
     align-items: center;
 }
@@ -15,7 +25,7 @@ header
     height: 150px;
 }
 
-nav a
+#knop
 {
     text-decoration: none;
     color: black;
@@ -36,10 +46,35 @@ nav
     display: flex;
     justify-content: space-around;
     width: 80%;
+    vertical-align: baseline;
 }
 
-header a img
+#account-icon
 {
     width: 40px;
     vertical-align: middle;
+    filter: invert(100%);
+}
+
+header h1
+{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+header h2
+{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.header-content
+{
+    display: flex;
+    flex-direction: column;
 }
