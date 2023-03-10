@@ -10,15 +10,14 @@
 
 
     <?php
-        require 'pages/comm.php'
+        require_once 'conn.php';
 
         $username = $_POST['username'];
         $password = $_POST['password'];
         
 
         $sql = "INSERT INTO users (username, password)
-        VALUES ('$username', '$password')";
-        // use exec() because no results are returned
+        VALUES ('$username .', ' . $password .')";
         $conn->exec($sql);
     ?>
 

@@ -78,3 +78,154 @@ header h2
     display: flex;
     flex-direction: column;
 }
+
+.header-content img
+{
+    margin-top: 10px;
+}
+
+.review
+{
+    width: 100%;
+    height: auto;
+    background-color: rgba(248, 248, 248, 1);
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.review h1
+{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Fredoka One', cursive;
+    text-decoration: underline;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.review-list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    justify-content: space-evenly;
+}
+
+.reviews
+{
+    width: 90%;
+    height: 150px;
+    background: #C7C6C6;
+    border: 3px solid rgba(0, 0, 0, 0.41);
+}
+
+#naam
+{
+    font-family: 'Fredoka One', cursive;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 0;
+    margin-bottom: 0;
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.review-content
+{
+    display: flex;
+}
+
+.reviews p
+{
+    margin-left: 15px;
+    font-family: 'Fredoka One', cursive;
+    width: 85%;
+}
+
+.score
+{
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 5px solid #71D4FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.score p
+{
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+
+.over-ons
+{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/achtergrond2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px) grayscale(100%);
+    padding-bottom: 140px;
+}
+
+.over-ons h1
+{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    text-decoration: underline;
+    font-size: 60px;
+    padding-top: 30px;
+}
+
+.over-ons-content
+{
+    width: 80%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.486);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.over-ons-content h2
+{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: rgba(249, 223, 127, 1);
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.over-ons-content p
+{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: rgba(249, 223, 127, 1);
+    font-size: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.contact
+{
+    background: rgba(217, 217, 217, 1);
+}
+
+h3
+{
+    font-family: 'Fredoka One', cursive;
+    text-decoration: underline;
+    font-size: 60px;
+    padding-top: 30px;
+}
