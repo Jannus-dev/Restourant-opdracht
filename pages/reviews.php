@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Bier Hier - Reviews</title>
     <link rel="stylesheet" href="../css/style.css?10">
     <link rel="stylesheet" href="../css/reviews.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
