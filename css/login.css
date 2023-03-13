@@ -4,13 +4,12 @@
     padding: 0;
 }
 
-header
+body
 {
     background-image: url("../img/achtergrond3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: saturation(25%);
-    height: auto;
 }
 
 .nav
@@ -55,21 +54,4 @@ nav
     vertical-align: middle;
     filter: invert(100%);
 }
-
-/* header h1
-{
-    font-family: 'Fredoka One', cursive;
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 100px;
-}
-
-header h2
-{
-    font-family: 'Fredoka One', cursive;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-} */
 
