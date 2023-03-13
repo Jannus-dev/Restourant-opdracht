@@ -167,7 +167,7 @@ header h2
 
 .over-ons
 {
-    margin-top: 20px;
+    padding-top: 20px;
     width: 100%;
     height: auto;
     background-image: url(../img/achtergrond2.jpeg);
@@ -183,7 +183,7 @@ header h2
     font-family: 'Fredoka One', cursive;
     text-decoration: underline;
     font-size: 60px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .over-ons-content

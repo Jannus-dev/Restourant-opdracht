@@ -100,14 +100,7 @@
                 <div class="col-md-4">
                     <b>Customer service:</b> <br />
                     Phone: +1 129 209 291<br />
-                    E-mail: <a href="mailto:support@mysite.com">support@mysite.com</a><br />
-                    <br /><br />
-                    <b>Headquarter:</b><br />
-                    Company Inc, <br />
-                    Las vegas street 201<br />
-                    55001 Nevada, USA<br />
-                    Phone: +1 145 000 101<br />
-                    <a href="mailto:usa@mysite.com">usa@mysite.com</a><br />
+                    E-mail: <a href="mailto:service@bierhier.nl">service@bierhier.nl</a><br />
                 </div>
                 </div>
 
@@ -116,9 +109,15 @@
         </section>
     </main>
 
-    <footer>
-        
-    </footer>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-dark" href="jannus-dev.github.io">Jannus-Dev</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
