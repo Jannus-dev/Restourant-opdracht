@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css?10">
+    <link rel="stylesheet" href="../css/style.css?11">
     <link rel="stylesheet" href="../css/bestel.css?1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,13 @@
         <div>
             <img id="logo" src="../img/logo.png" alt="logo">
             <nav>
-                <a href="#" id="knop">Home</a>
-                <a href="#" id="knop">Bestellen</a>
+                <a href="../index.php" id="knop">Home</a>
+                <a href="bestel.php" id="knop">Bestellen</a>
                 <a href="#review" id="knop">Reviews</a>
                 <a href="#over-ons" id="knop">Over Ons</a>
                 <a href="#contact" id="knop">Contact</a>
             </nav>
-            <a href="pages/login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
+            <a href="login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
         </div>
     </header>
 
@@ -44,6 +44,7 @@
                             goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
                             mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
                             voor Hertog Jan Pilsener.</p>
+                        <p class="prijs">€1,75</p>
                         <a href="" id="knop">Voeg Toe</a>
                     </div>
                 </div>
@@ -58,6 +59,7 @@
                             goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
                             mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
                             voor Hertog Jan Pilsener.</p>
+                            <p class="prijs">€1,75</p>
                         <a href="" id="knop">Voeg Toe</a>
                     </div>
                 </div>
@@ -72,6 +74,7 @@
                             goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
                             mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
                             voor Hertog Jan Pilsener.</p>
+                            <p class="prijs">€1,75</p>
                         <a href="" id="knop">Voeg Toe</a>
                     </div>
                 </div>
@@ -86,6 +89,7 @@
                             goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
                             mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
                             voor Hertog Jan Pilsener.</p>
+                            <p class="prijs">€1,75</p>
                         <a href="" id="knop">Voeg Toe</a>
                     </div>
                 </div>
@@ -100,6 +104,7 @@
                             goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
                             mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
                             voor Hertog Jan Pilsener.</p>
+                            <p class="prijs">€1,75</p>
                         <a href="" id="knop">Voeg Toe</a>
                     </div>
                 </div>

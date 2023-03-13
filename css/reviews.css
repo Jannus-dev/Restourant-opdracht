@@ -9,3 +9,8 @@ header
     box-shadow: none;
     background-color: white;
 }
+
+#account-icon 
+{
+    filter: none;
+}

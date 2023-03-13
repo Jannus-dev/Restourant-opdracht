@@ -21,13 +21,13 @@
         <div class="nav">
             <img id="logo" src="../img/logo.png" alt="logo">
             <nav>
-                <a href="#" id="knop">Home</a>
-                <a href="#" id="knop">Bestellen</a>
+                <a href="../index.php" id="knop">Home</a>
+                <a href="bestel.php" id="knop">Bestellen</a>
                 <a href="#" id="knop">Reviews</a>
                 <a href="#" id="knop">Over Ons</a>
                 <a href="#" id="knop">Contact</a>
             </nav>
-            <a href="pages/login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
+            <a href="login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
         </div>
 
         <section class="vh-100 gradient-custom">

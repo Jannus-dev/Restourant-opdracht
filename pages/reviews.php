@@ -22,10 +22,10 @@
             <img id="logo" src="../img/logo.png" alt="logo">
             <nav>
                 <a href="../index.php" id="knop">Home</a>
-                <a href="#" id="knop">Bestellen</a>
+                <a href="bestel.php" id="knop">Bestellen</a>
                 <a href="#" id="knop">Reviews</a>
                 <a href="#" id="knop">Over Ons</a>
-                <a href="#" id="knop">Contact</a>
+                <a href="#contact" id="knop">Contact</a>
             </nav>
             <a href="login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
         </div>
@@ -72,7 +72,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
 
                 <h3 class="text-center">Contact us</h3><br />

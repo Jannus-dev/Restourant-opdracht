@@ -4,6 +4,16 @@ header
     height: auto;
 }
 
+#account-icon 
+{
+    filter: none;
+}
+
+p
+{
+    margin-bottom: 0;
+}
+
 #b-pagina
 {
     color: rgb(240, 255, 152);
@@ -78,9 +88,19 @@ header
     font-size: 15px;
   }
 
+  .prijs
+  {
+    font-size: 20px;
+  }
+
   .text #knop
   {
     font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mand
@@ -88,16 +108,19 @@ header
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    position: sticky;
+    position: fixed;
     background-color: #FFCA00;
     border: 1px solid #000000;
-    bottom: 10px;
-    left: 100%;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #mand
 {
     color: #000000;
-    text-align: center;
 }
 
