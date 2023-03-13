@@ -54,7 +54,7 @@
                             Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
                             voluptates voluptas harum nobis!</p>
                         <div class="score">
-                            <p>⅘</p>
+                            <p>⅖</p>
                         </div>
                     </div>
                 </div>
