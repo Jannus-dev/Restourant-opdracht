@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <div>
@@ -45,7 +48,9 @@
                 <div class="reviews">
                     <h1 id="naam">Naam:</h1>
                     <div class="review-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit. Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo voluptates voluptas harum nobis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit.
+                            Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
+                            voluptates voluptas harum nobis!</p>
                         <div class="score">
                             <p>⅘</p>
                         </div>
@@ -54,7 +59,9 @@
                 <div class="reviews">
                     <h1 id="naam">Naam:</h1>
                     <div class="review-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit. Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo voluptates voluptas harum nobis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit.
+                            Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
+                            voluptates voluptas harum nobis!</p>
                         <div class="score">
                             <p>⅘</p>
                         </div>
@@ -63,7 +70,9 @@
                 <div class="reviews">
                     <h1 id="naam">Naam:</h1>
                     <div class="review-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit. Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo voluptates voluptas harum nobis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit.
+                            Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
+                            voluptates voluptas harum nobis!</p>
                         <div class="score">
                             <p>⅘</p>
                         </div>
@@ -88,20 +97,21 @@
                 <h3 class="text-center">Contact us</h3><br />
 
                 <div class="row">
-                <div class="col-md-8">
-                    <form action="/post" method="post">
-                        <input class="form-control" name="name" placeholder="Name..." /><br />
-                        <input class="form-control" name="phone" placeholder="Phone..." /><br />
-                        <input class="form-control" name="email" placeholder="E-mail..." /><br />
-                        <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:150px;"></textarea><br />
-                        <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <b>Customer service:</b> <br />
-                    Phone: +1 129 209 291<br />
-                    E-mail: <a href="mailto:service@bierhier.nl">service@bierhier.nl</a><br />
-                </div>
+                    <div class="col-md-8">
+                        <form action="/post" method="post">
+                            <input class="form-control" name="name" placeholder="Name..." /><br />
+                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
+                            <textarea class="form-control" name="text" placeholder="How can we help you?"
+                                style="height:150px;"></textarea><br />
+                            <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Customer service:</b> <br />
+                        Phone: +1 129 209 291<br />
+                        E-mail: <a href="mailto:service@bierhier.nl">service@bierhier.nl</a><br />
+                    </div>
                 </div>
 
             </div>
@@ -111,15 +121,18 @@
 
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
 
-  <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-dark" href="jannus-dev.github.io">Jannus-Dev</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="jannus-dev.github.io">Jannus-Dev</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>
