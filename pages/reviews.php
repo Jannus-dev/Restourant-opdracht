@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?10">
+    <link rel="stylesheet" href="../css/style.css?10">
+    <link rel="stylesheet" href="../css/reviews.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -18,30 +19,20 @@
 <body>
     <header>
         <div>
-            <img id="logo" src="img/logo.png" alt="logo">
+            <img id="logo" src="../img/logo.png" alt="logo">
             <nav>
-                <a href="#" id="knop">Home</a>
+                <a href="../index.php" id="knop">Home</a>
                 <a href="#" id="knop">Bestellen</a>
-                <a href="#review" id="knop">Reviews</a>
-                <a href="#over-ons" id="knop">Over Ons</a>
-                <a href="#contact" id="knop">Contact</a>
+                <a href="#" id="knop">Reviews</a>
+                <a href="#" id="knop">Over Ons</a>
+                <a href="#" id="knop">Contact</a>
             </nav>
-            <a href="pages/login.php"><img src="img/account.png" alt="login" id="account-icon"></a>
-        </div>
-        <div class="header-content">
-            <h1>
-                Bier Hier
-            </h1>
-            <h2>
-                Altijd voor jou
-            </h2>
-            <a href="#" id="knop">Bestellen</a>
-            <img src="img/18plus.png" alt="18+">
+            <a href="login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
         </div>
     </header>
 
     <main>
-        <section class="review" id="review">
+        <section class="review">
             <h1>Reviews</h1>
 
             <div class="review-list">
@@ -78,20 +69,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="pages/reviews.php" id="knop">Meer →</a>
             </div>
         </section>
 
-        <section class="over-ons" id="over-ons">
-            <h1>Over Ons</h1>
-            <div class="over-ons-content">
-                <h2>Wij zijn de familie Hop</h2>
-                <p>Wij zijn al 50 jaar in de bier industrie om mensen te adviseren over het beste bier.</p>
-                <p>Onze gave voor het bier is generaties lang door gegeven in ons bloed en zit er nog altijd in.</p>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
+        <section class="contact">
             <div class="container">
 
                 <h3 class="text-center">Contact us</h3><br />
