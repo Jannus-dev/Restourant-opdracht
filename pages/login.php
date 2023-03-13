@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bier Hier - Login</title>
+    <link rel="shortcut icon" href="../img/logo.png" />
     <link rel="stylesheet" href="../css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +24,9 @@
             <nav>
                 <a href="../index.php" id="knop">Home</a>
                 <a href="bestel.php" id="knop">Bestellen</a>
-                <a href="#" id="knop">Reviews</a>
-                <a href="#" id="knop">Over Ons</a>
-                <a href="#" id="knop">Contact</a>
+                <a href="../index.php#review" id="knop">Reviews</a>
+                <a href="../index.php#over-ons" id="knop">Over Ons</a>
+                <a href="../index.php#contact" id="knop">Contact</a>
             </nav>
             <a href="login.php"><img src="../img/account.png" alt="login" id="account-icon"></a>
         </div>
