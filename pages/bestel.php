@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-4">
                         <b>Customer service:</b> <br />
-                        Phone: +1 129 209 291<br />
+                        Phone: +31(6)400-72-75<br />
                         E-mail: <a href="mailto:service@bierhier.nl">service@bierhier.nl</a><br />
                     </div>
                 </div>
