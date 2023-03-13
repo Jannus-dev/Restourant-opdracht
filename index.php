@@ -21,7 +21,7 @@
             <img id="logo" src="img/logo.png" alt="logo">
             <nav>
                 <a href="#" id="knop">Home</a>
-                <a href="#" id="knop">Bestellen</a>
+                <a href="pages/bestel.php" id="knop">Bestellen</a>
                 <a href="#review" id="knop">Reviews</a>
                 <a href="#over-ons" id="knop">Over Ons</a>
                 <a href="#contact" id="knop">Contact</a>

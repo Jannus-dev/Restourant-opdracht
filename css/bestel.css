@@ -1,0 +1,103 @@
+header
+{
+    background-image: none;
+    height: auto;
+}
+
+#b-pagina
+{
+    color: rgb(240, 255, 152);
+    font-family: 'Fredoka One', cursive;
+    background-image: url("../img/achtergrond1.jpg");
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.producten
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.product
+{
+    position: relative;
+    width: 330px;
+    margin-bottom: 50px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 54px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .product:hover .image {
+    opacity: 0.3;
+  }
+  
+  .product:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .text h2
+  {
+    font-size: 20px;
+  }
+
+  .text p
+  {
+    font-size: 15px;
+  }
+
+  .text #knop
+  {
+    font-size: 16px;
+  }
+
+  .mand
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: sticky;
+    background-color: #FFCA00;
+    border: 1px solid #000000;
+    bottom: 10px;
+    left: 100%;
+}
+
+#mand
+{
+    color: #000000;
+    text-align: center;
+}
+
