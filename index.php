@@ -92,43 +92,9 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <div class="container">
-
-                <h3 class="text-center">Contact us</h3><br />
-
-                <div class="row">
-                    <div class="col-md-8">
-                        <form action="/post" method="post">
-                            <input class="form-control" name="name" placeholder="Name..." /><br />
-                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
-                            <input class="form-control" name="email" placeholder="E-mail..." /><br />
-                            <textarea class="form-control" name="text" placeholder="How can we help you?"
-                                style="height:150px;"></textarea><br />
-                            <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
-                        </form>
-                    </div>
-                    <div class="col-md-4">
-                        <b>Customer service:</b> <br />
-                        Phone: +31(6)400-72-75<br />
-                        E-mail: <a href="mailto:service@bierhier.nl">service@bierhier.nl</a><br />
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-    </main>
-
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright:
-            <a class="text-dark" href="jannus-dev.github.io">Jannus-Dev</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+        <?php
+        include 'pages/footer.php'
+        ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
