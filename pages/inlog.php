@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-
     <?php
         require_once 'conn.php';
+            // get input from form into vars
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+    
+            $stmt = $conn->prepare("SELECT username, password FROM users WHERE username=:username AND password=:password");
+            $stmt->execute(['username' => $username, 'password' => $password]);
+            $user = $stmt->fetch();
+    
+            if ($user != false) {
+                echo "login succes <br>";
+                echo "welcome " .$user['username'] . "! <br> password: " . $user['password'] . "<br>";
+            } else {
+                echo "account does not exist.. <br>";
+            }
 
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        
-
-        $sql = "INSERT INTO users (username, password)
-        VALUES ('$username .', ' . $password .')";
-        $conn->exec($sql);
     ?>
-
-
-</body>
-
-</html>
