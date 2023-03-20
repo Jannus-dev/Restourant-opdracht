@@ -1,3 +1,10 @@
+<?php
+    require_once 'conn.php';
+    $stmt = $conn->prepare("SELECT * FROM products");
+    $stmt->execute(); 
+    $data = $stmt->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,66 +47,13 @@
                     </div>
                 </div>
             </div>
+        <?php
+            foreach ($data as $row) {
+                echo  'sf';
+            }
+        ?>
 
-            <div class="product">
-                <img src="../img/bier/hertog-jan.jpg" alt="bier" class="image" style="width:330px">
-                <div class="middle">
-                    <div class="text">
-                        <h2>Hertog Jan</h2>
-                        <p>Alleen de rijkste mout, de mooiste hop en kristalhelder natuurzuiver water uit de Eiffel zijn
-                            goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
-                            mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
-                            voor Hertog Jan Pilsener.</p>
-                        <p class="prijs">€1,75</p>
-                        <a href="" id="knop">Voeg Toe</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="product">
-                <img src="../img/bier/hertog-jan.jpg" alt="bier" class="image" style="width:330px">
-                <div class="middle">
-                    <div class="text">
-                        <h2>Hertog Jan</h2>
-                        <p>Alleen de rijkste mout, de mooiste hop en kristalhelder natuurzuiver water uit de Eiffel zijn
-                            goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
-                            mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
-                            voor Hertog Jan Pilsener.</p>
-                        <p class="prijs">€1,75</p>
-                        <a href="" id="knop">Voeg Toe</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="../img/bier/hertog-jan.jpg" alt="bier" class="image" style="width:330px">
-                <div class="middle">
-                    <div class="text">
-                        <h2>Hertog Jan</h2>
-                        <p>Alleen de rijkste mout, de mooiste hop en kristalhelder natuurzuiver water uit de Eiffel zijn
-                            goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
-                            mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
-                            voor Hertog Jan Pilsener.</p>
-                        <p class="prijs">€1,75</p>
-                        <a href="" id="knop">Voeg Toe</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="../img/bier/hertog-jan.jpg" alt="bier" class="image" style="width:330px">
-                <div class="middle">
-                    <div class="text">
-                        <h2>Hertog Jan</h2>
-                        <p>Alleen de rijkste mout, de mooiste hop en kristalhelder natuurzuiver water uit de Eiffel zijn
-                            goed genoeg. Deze ingrediënten en de kunde van de brouwers zorgen voor goudgele kleur en de
-                            mooie volle schuimkraag. De zachte smaak en de aangenaam bittere afdronk zijn karakteristiek
-                            voor Hertog Jan Pilsener.</p>
-                        <p class="prijs">€1,75</p>
-                        <a href="" id="knop">Voeg Toe</a>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <?php
