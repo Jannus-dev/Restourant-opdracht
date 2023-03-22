@@ -1,17 +1,17 @@
 <section class="contact" id="contact">
             <div class="container">
 
-                <h3 class="text-center">Contact us</h3><br />
+                <h3 class="text-center">Contact Ons</h3><br />
 
                 <div class="row">
                     <div class="col-md-8">
                         <form action="/post" method="post">
-                            <input class="form-control" name="name" placeholder="Name..." /><br />
-                            <input class="form-control" name="phone" placeholder="Phone..." /><br />
+                            <input class="form-control" name="name" placeholder="Naam..." /><br />
+                            <input class="form-control" name="phone" placeholder="Telefoon..." /><br />
                             <input class="form-control" name="email" placeholder="E-mail..." /><br />
-                            <textarea class="form-control" name="text" placeholder="How can we help you?"
+                            <textarea class="form-control" name="text" placeholder="Hoe kunnen we helpen?"
                                 style="height:150px;"></textarea><br />
-                            <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
+                            <input class="btn btn-primary" type="submit" value="Verstuur🏤🚚" /><br /><br />
                         </form>
                     </div>
                     <div class="col-md-4">

@@ -49,7 +49,17 @@
             </div>
         <?php
             foreach ($data as $row) {
-                echo  'sf';
+                echo "<div class='product'>";
+                echo "<img src=" . $row['image'] . " alt='bier' class='image' style='width:330px'>";
+                echo "<div class='middle'>";
+                echo "<div class='text'>";
+                echo "<h2>" . $row['title'] . "</h2>";
+                echo "<p>" . $row['info'] . "</p>";
+                echo "<p class='prijs'>€" . $row['price'] . "</p>";
+                echo "<a href='#' id='knop'>Voeg Toe</a>";
+                echo "</div>";
+                echo "</div>";
+                echo "</div>";
             }
         ?>
 
