@@ -7,4 +7,6 @@
     $sql = "INSERT INTO users (username, password)
     VALUES ('$username', '$password')";
     $conn->exec($sql);
+    
+    header("location: login.php")
 ?>
