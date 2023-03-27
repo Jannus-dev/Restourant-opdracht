@@ -8,6 +8,17 @@ header
 {
     box-shadow: none;
     background-color: white;
+    height: auto;
+}
+
+.reviews
+{
+    margin-bottom: 30px;
+}
+
+.review-list
+{
+    height: auto;
 }
 
 #account-icon 

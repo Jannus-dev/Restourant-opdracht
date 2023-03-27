@@ -1,6 +1,6 @@
 <?php
-    require_once 'conn.php';
-    $stmt = $conn->prepare("SELECT * FROM reviews");
+    require_once 'pages/conn.php';
+    $stmt = $conn->prepare("SELECT * FROM reviews LIMIT 3");
     $stmt->execute(); 
     $data = $stmt->fetchAll();
 ?>  
