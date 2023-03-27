@@ -1,3 +1,10 @@
+<?php
+    require_once 'conn.php';
+    $stmt = $conn->prepare("SELECT * FROM reviews");
+    $stmt->execute(); 
+    $data = $stmt->fetchAll();
+?>  
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,39 +34,34 @@
             <h1>Reviews</h1>
 
             <div class="review-list">
-                <div class="reviews">
-                    <h1 id="naam">Naam:</h1>
-                    <div class="review-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit.
-                            Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
-                            voluptates voluptas harum nobis!</p>
-                        <div class="score">
-                            <p>⅘</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <h1 id="naam">Naam:</h1>
-                    <div class="review-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit.
-                            Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
-                            voluptates voluptas harum nobis!</p>
-                        <div class="score">
-                            <p>⅖</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <h1 id="naam">Naam:</h1>
-                    <div class="review-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta in nesciunt impedit.
-                            Accusantium rerum veniam quis? Sapiente, labore maxime fuga ipsa, cum dicta itaque quo
-                            voluptates voluptas harum nobis!</p>
-                        <div class="score">
-                            <p>⅘</p>
-                        </div>
-                    </div>
-                </div>
+
+                <?php
+                    foreach ($data as $row) {
+                        echo "<div class='reviews'>";
+                        echo "<h1 id='naam'>Naam: " . $row['name'] . "</h1>";
+                        echo "<div class='review-content'>";
+                        echo "<p>" . $row['review'] . "</p>";
+                        echo "<div class='score'>";
+                        if ($row['reting' == 5]){
+                            echo "<p>5/5</p>";
+                        }elseif ($row['reting' == 4]){
+                            echo "<p>4/5</p>";
+                        }elseif ($row['reting' == 3]){
+                            echo "<p>3/5</p>";
+                        }elseif ($row['reting' == 2]){
+                            echo "<p>2/5</p>";
+                        }elseif ($row['reting' == 1]){
+                            echo "<p>1/5</p>";
+                        }else{
+                            echo "<p>6/5</p>";
+                        }
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                    }
+
+
+                ?>
             </div>
         </section>
 

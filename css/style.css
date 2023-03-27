@@ -162,7 +162,10 @@ header h2
     margin-left: 0;
     text-align: center;
     width: 100%;
-    font-size: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .over-ons
