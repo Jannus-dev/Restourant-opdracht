@@ -42,19 +42,7 @@
                         echo "<div class='review-content'>";
                         echo "<p>" . $row['review'] . "</p>";
                         echo "<div class='score'>";
-                        if ($row['reting' == "5"]){
-                            echo "<p>5/5</p>";
-                        }elseif ($row['reting' == "4"]){
-                            echo "<p>4/5</p>";
-                        }elseif ($row['reting' == "3"]){
-                            echo "<p>3/5</p>";
-                        }elseif ($row['reting' == "2"]){
-                            echo "<p>2/5</p>";
-                        }elseif ($row['reting' == "1"]){
-                            echo "<p>1/5</p>";
-                        }else{
-                            echo "<p>6/5</p>";
-                        }
+                        echo "<p>" . $row['reting'] . "/5</p>";
                         echo "</div>";
                         echo "</div>";
                         echo "</div>";
@@ -64,7 +52,6 @@
                 ?>
             </div>
         </section>
-
         <?php
         include 'footer.php';
         ?>

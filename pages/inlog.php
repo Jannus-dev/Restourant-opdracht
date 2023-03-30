@@ -12,9 +12,7 @@
                 session_start();
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['rol'] = $user['rol'];
-                echo $_SESSION['rol'];
-                echo "login succes <br>";
-                echo "welcome " .$user['username'] . "! <br> password: " . $user['password'] . "<br>";
+                header("location: backdesk.php");
             } else {
                 header("location: login.php");
 
