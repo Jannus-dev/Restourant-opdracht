@@ -1,12 +1,11 @@
 <?php
 session_start();
-if ($_SESSION['rol'] <= 9)
-{}
-else
-{
-    header("location: ../index.php");
-}
+require_once 'conn.php';
+$stmt = $conn->prepare("SELECT * FROM products");
+$stmt->execute(); 
+$data = $stmt->fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,21 +27,23 @@ else
 
 <body>
 
-    <?php include 'adminheader.php' ?>
-    <main>
-        <P>Welkom <?php echo $_SESSION['username'] ?></P>
-        <p>
-            <?php
-                if ($_SESSION['rol'] <= 2)
-                    {
-                        echo "Functie Admin";
-                    }
-                    else{
-                        echo "Functie Medewerker";
-                    }
-                ?>
-        </p>
-    </main>
+    <?php
+    include('adminheader.php')
+?>
+
+    <section class="articlen">
+        <?php
+        foreach ($data as $row)
+        {
+            echo "<a href='#' id='stop'>";
+            echo "<div class='bier'>";
+            echo "<p>" . $row['title'] . "</p>";
+            echo "</div>";
+            echo "</a>";
+        }
+        ?>
+    </section>
+
 </body>
 
 </html>

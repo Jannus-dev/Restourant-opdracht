@@ -1,12 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['rol'] <= 9)
-{}
-else
-{
-    header("location: ../index.php");
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,21 +23,19 @@ else
 
 <body>
 
-    <?php include 'adminheader.php' ?>
-    <main>
-        <P>Welkom <?php echo $_SESSION['username'] ?></P>
-        <p>
-            <?php
-                if ($_SESSION['rol'] <= 2)
-                    {
-                        echo "Functie Admin";
-                    }
-                    else{
-                        echo "Functie Medewerker";
-                    }
-                ?>
-        </p>
-    </main>
+    <?php
+    include('adminheader.php')
+?>
+
+    <section class="pk">
+        <a class="producten-knop" href="produckten-aanpassen.php">
+            aanpassen
+        </a>
+        <a class="producten-knop" href="#">
+            toevoegen
+        </a>
+    </section>
+
 </body>
 
 </html>
