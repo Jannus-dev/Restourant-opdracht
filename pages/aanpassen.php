@@ -1,7 +1,12 @@
 <?php
 session_start();
 require_once 'conn.php';
+$id = (int)$_GET['id'];
 
+        $stmt = $conn->prepare("SELECT * FROM products WHERE id=:id");
+
+        $stmt->execute(['id' => $id]); 
+        $row = $stmt->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -32,32 +37,35 @@ require_once 'conn.php';
             <div class="container-fluid">
                 <div class="row" id="center-dit">
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <form name="addproductform" action="add.php" method="POST">
+                        <form name="addproductform" action="update-products.php" method="POST">
+                            <input class="form-control" id="id" name="id" value="<?php echo $row['id']; ?>"
+                                type="hidden" for="id" />
                             <div class="form-group ">
                                 <label class="control-label " for="name">
                                     Titel
                                 </label>
-                                <input class="form-control" id="title" name="title" placeholder="Product titel"
+                                <input class="form-control" id="title" name="title" value="<?php echo $row['title']; ?>"
                                     type="text" for="title" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label " for="textarea">
                                     Product informatie
                                 </label>
-                                <textarea class="form-control" cols="40" id="info" name="info"
-                                    placeholder="Product informatie" rows="5" for="info"></textarea>
+                                <textarea class="form-control" cols="40" id="info" name="info" rows="5"
+                                    for="info"><?php echo $row['info']; ?></textarea>
                             </div>
                             <div class="form-group ">
                                 <label class="control-label " for="number">
                                     Prijs
                                 </label>
-                                <input class="form-control" id="price" name="price" type="text" />
+                                <input class="form-control" id="price" name="price" type="text"
+                                    value="<?php echo $row['price']; ?>" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label " for="text">
                                     Afbeelding
                                 </label>
-                                <input class="form-control" id="image" name="image" placeholder="Link hier"
+                                <input class="form-control" id="image" name="image" value="<?php echo $row['image']; ?>"
                                     type="text" />
                             </div>
                             <div class="form-group">
