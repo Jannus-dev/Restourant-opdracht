@@ -38,7 +38,7 @@ require_once 'conn.php';
                                     Titel
                                 </label>
                                 <input class="form-control" id="title" name="title" placeholder="Product titel"
-                                    type="text" for="title"/>
+                                    type="text" for="title" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label " for="textarea">
@@ -57,7 +57,8 @@ require_once 'conn.php';
                                 <label class="control-label " for="text">
                                     Afbeelding
                                 </label>
-                                <input class="form-control" id="image" name="image" placeholder="Link hier" type="text" />
+                                <input class="form-control" id="image" name="image" placeholder="Link hier"
+                                    type="text" />
                             </div>
                             <div class="form-group">
                                 <div>

@@ -35,11 +35,11 @@ $data = $stmt->fetchAll();
         <?php
         foreach ($data as $row)
         {
-            echo "<a href='#' id='stop'>";
             echo "<div class='bier'>";
             echo "<p>" . $row['title'] . "</p>";
+            echo "<a href='aanpassen.php?id=".$row['id']."'>Edit</a>";
+            echo "<a href='#' id='del'>Delete</a>";
             echo "</div>";
-            echo "</a>";
         }
         ?>
     </section>

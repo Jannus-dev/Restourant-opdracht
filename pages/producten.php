@@ -31,7 +31,7 @@ session_start();
         <a class="producten-knop" href="produckten-aanpassen.php">
             aanpassen
         </a>
-        <a class="producten-knop" href="#">
+        <a class="producten-knop" href="adminadd.php">
             toevoegen
         </a>
     </section>
