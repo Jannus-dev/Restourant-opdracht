@@ -11,7 +11,7 @@
                     }
                 ?>
                 <a href="#" id="knop">Bestellingen</a>
-                <a href="#" id="knop">Reviews</a>
+                <a href="admin-reviews.php" id="knop">Reviews</a>
                 <a href="#" id="knop">Berichten</a>
                 <a href="#" id="knop">Nieuws</a>
             </nav>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'conn.php';
-$stmt = $conn->prepare("SELECT * FROM products");
+$stmt = $conn->prepare("SELECT * FROM reviews");
 $stmt->execute(); 
 $data = $stmt->fetchAll();
 ?>
@@ -17,6 +17,7 @@ $data = $stmt->fetchAll();
     <link rel="shortcut icon" href="../img/logo.png" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/reviews.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -35,10 +36,14 @@ $data = $stmt->fetchAll();
         <?php
         foreach ($data as $row)
         {
-            echo "<div class='bier'>";
-            echo "<p>" . $row['title'] . "</p>";
-            echo "<a href='aanpassen.php?id=".$row['id']."'>Edit</a>";
-            echo "<a href='del.php?id=".$row['id']."' id='del'>Delete</a>";
+            echo "<div class='reviews'>";
+            echo "<h1 id='naam'>Naam: " . $row['name'] . "</h1>";
+            echo "<div class='review-content'>";
+            echo "<p>" . $row['review'] . "</p>";
+            echo "<div class='score'>";
+            echo "<p>" . $row['reting'] . "/5</p>";
+            echo "</div>";
+            echo "</div>";
             echo "</div>";
         }
         ?>
