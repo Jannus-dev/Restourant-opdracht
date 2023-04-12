@@ -1,13 +1,13 @@
 <?php
     require_once 'conn.php';
 
+    $image = $_POST['image'];
     $title = $_POST['title'];
     $info = $_POST['info'];
     $price = $_POST['price'];
-    $image = $_POST['image'];
 
-    $sql = "INSERT INTO products (title, info, price, image)
-    VALUES ('$title', '$info', '$price', '$image')";
+    $sql = "INSERT INTO products (image, title, info, price)
+    VALUES ('$image', '$title', '$info', '$price')";
     $conn->exec($sql);
     
     header("location: producten.php")
