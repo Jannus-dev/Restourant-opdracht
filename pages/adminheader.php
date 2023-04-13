@@ -7,7 +7,7 @@
                     if ($_SESSION['rol'] <= 2)
                     {
                         echo "<a href='producten.php' id='knop'>Producten</a>";
-                        echo "<a href='#' id='knop'>Werknemers</a>";
+                        echo "<a href='accounts.php' id='knop'>Werknemers</a>";
                     }
                 ?>
                 <a href="#" id="knop">Bestellingen</a>
