@@ -108,3 +108,15 @@ main p
 {
     margin-top: 10px;
 }
+
+.bestellingen h1
+{
+    text-align: center;
+}
+
+.nieuw-button
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

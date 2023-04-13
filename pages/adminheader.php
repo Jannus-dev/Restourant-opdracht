@@ -1,6 +1,6 @@
 <header>
         <div>
-            <img id="logo" src="../img/logo.png" alt="logo">
+            <a href="logout.php"><img id="logo" src="../img/logo.png" alt="logo"></a>
             <nav>
                 <a href="backdesk.php" id="knop">Desktop</a>
                 <?php
@@ -10,9 +10,9 @@
                         echo "<a href='accounts.php' id='knop'>Werknemers</a>";
                     }
                 ?>
-                <a href="#" id="knop">Bestellingen</a>
+                <a href="bestellingen.php" id="knop">Bestellingen</a>
                 <a href="admin-reviews.php" id="knop">Reviews</a>
-                <a href="#" id="knop">Berichten</a>
+                <a href="berichten.php" id="knop">Berichten</a>
                 <a href="#" id="knop">Nieuws</a>
             </nav>
         </div>

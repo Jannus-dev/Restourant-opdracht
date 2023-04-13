@@ -1,5 +1,9 @@
 <?php
 session_start();
+require_once 'conn.php';
+$stmt = $conn->prepare("SELECT * FROM berichten");
+$stmt->execute(); 
+$data = $stmt->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -25,10 +29,31 @@ session_start();
     <?php
     include('adminheader.php')
 ?>
-    <section class="bestellingen">
-        <h1>Geen bestellingen gevonden!🫥😓</h1>
+
+    <?php
+        if ($_SESSION['rol'] <= 2)
+            {
+                echo "<a href='producten.php' id='knop' class='nieuw-button'>Nieuw</a>";
+            }
+    ?>
+
+    <section class="articlen">
+        <?php
+        foreach ($data as $row)
+        {
+            echo "<div class='reviews'>";
+            echo "<h1 id='naam'>Naam: " . $row['name'] . "</h1>";
+            echo "<div class='review-content'>";
+            echo "<p>" . $row['review'] . "</p>";
+            echo "<div class='score'>";
+            echo "<p>" . $row['reting'] . "/5</p>";
+            echo "</div>";
+            echo "</div>";
+            echo "</div>";
+        }
+        ?>
     </section>
 
-    
 </body>
+
 </html>
