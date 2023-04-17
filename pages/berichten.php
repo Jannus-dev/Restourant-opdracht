@@ -33,7 +33,7 @@ $data = $stmt->fetchAll();
     <?php
         if ($_SESSION['rol'] <= 2)
             {
-                echo "<a href='producten.php' id='knop' class='nieuw-button'>Nieuw</a>";
+                echo "<a href='add-berichten.php' id='knop' class='nieuw-button'>Nieuw</a>";
             }
     ?>
 
@@ -41,17 +41,16 @@ $data = $stmt->fetchAll();
         <?php
         foreach ($data as $row)
         {
-            echo "<div class='reviews'>";
-            echo "<h1 id='naam'>Naam: " . $row['name'] . "</h1>";
-            echo "<div class='review-content'>";
-            echo "<p>" . $row['review'] . "</p>";
-            echo "<div class='score'>";
-            echo "<p>" . $row['reting'] . "/5</p>";
-            echo "</div>";
+            echo "<div class='card'>";
+            echo "<div class='card-header'>" . $row['datum'] . "</div>";
+            echo "<div class='card-body'>";
+            echo "<h5 class='card-title'>" . $row['titel'] . "</h5>";
+            echo "<p class='card-text'>" . $row['text'] . "</p>";
             echo "</div>";
             echo "</div>";
         }
         ?>
+
     </section>
 
 </body>

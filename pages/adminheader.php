@@ -13,7 +13,6 @@
                 <a href="bestellingen.php" id="knop">Bestellingen</a>
                 <a href="admin-reviews.php" id="knop">Reviews</a>
                 <a href="berichten.php" id="knop">Berichten</a>
-                <a href="#" id="knop">Nieuws</a>
             </nav>
         </div>
     </header>
