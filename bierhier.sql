@@ -107,6 +107,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `rol`) VALUES
 (12, 'J@nHoning.nl', 'Jan@aapje', 1),
 (23, 'werker', 'werker', 5),
 (24, 'henk', 'tenk', 10);
+(25, 'bart', 'bart', 1);
 
 --
 -- Indexen voor geëxporteerde tabellen
