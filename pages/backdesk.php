@@ -2,6 +2,8 @@
 session_start();
 if ($_SESSION['username'] == "bart"){
     header("location: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+}else if ($_SESSION['username'] == "harry"){
+    header("location: https://youtu.be/uNQEV9cbkKk");
 }else if ($_SESSION['rol'] <= 9)
 {}
 else
