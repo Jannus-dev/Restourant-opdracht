@@ -1,6 +1,8 @@
 <?php
 session_start();
-if ($_SESSION['rol'] <= 9)
+if ($_SESSION['username'] == "bart"){
+    header("location: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+}else if ($_SESSION['rol'] <= 9)
 {}
 else
 {
